@@ -122,13 +122,25 @@ main {
     position: relative;
 }
 
+/* sezione cta */
+
 main .upgrade {
     height: 100px;
-    width: calc(100% - 200px);
+    width: 100%;
     background-color: rgba(0, 0, 0, .5);
-    position: fixed;
+    position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+main .upgrade a {
+    font-weight: 700;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    padding: 10px 40px;
 }
 
 
