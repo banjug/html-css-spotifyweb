@@ -29,7 +29,10 @@ a {
 aside {
     width: 200px;
     background-color: darkcyan;
-}   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 aside > div {
     width: 100%;
@@ -56,6 +59,7 @@ aside img {
 
 aside .logo {
     width: 75%;
+    margin-bottom: 20px;
 }
 
 aside .logo img {
@@ -64,6 +68,11 @@ aside .logo img {
 
 aside .logo #logo-s {
     display: none;
+}
+
+/* navbar */
+aside .aside-nav {
+    margin-bottom: 20px;
 }
 
 aside .aside-nav ul li:first-child a {
