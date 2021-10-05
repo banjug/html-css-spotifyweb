@@ -17,7 +17,6 @@ a {
 #wrapper {
     display: flex;
     height: calc(100vh - 100px);
-    background-color: cornflowerblue;
 }
 
 .divider {
@@ -28,7 +27,7 @@ a {
 /* sezione laterale navigazione */
 aside {
     width: 200px;
-    background-color: darkcyan;
+    background-color: #000000;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -120,6 +119,7 @@ aside .profile div:last-child {
 main {
     width: calc(100% - 200px);
     position: relative;
+    background-color: #141922;
 }
 
 /* sezione cta */
@@ -138,7 +138,7 @@ main .upgrade a {
     color: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 20px;
-    padding: 10px 40px;
+    padding: 10px 30px;
     margin-right: 20px;
     position: absolute;
     top: 50%;
@@ -152,7 +152,7 @@ main .upgrade a {
 
 #player {
     height: 100px;
-    background-color: coral;
+    background-color: #282828;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -190,8 +190,17 @@ main .upgrade a {
 }
 
 #player .player-tools i {
-    margin: 0 20px;
+    margin: 0 10px;
     color: #ffffff;
+}
+
+#player .player-tools div a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#player .player-tools div a:nth-child(3) {
+    font-size: 1.75rem;
 }
 
 #player .player-tools div:last-child {
@@ -209,7 +218,7 @@ main .upgrade a {
 }
 
 #player .player-tools .play-bar {
-    width: 500px;
+    width: 30vw;
 }
 
 
