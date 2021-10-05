@@ -17,12 +17,12 @@ a {
 /* //////////////////////////// */
 /* sezione laterale navigazione */
 aside {
-    width: 250px;
+    width: 200px;
     background-color: darkcyan;
 }   
 
 aside div {
-    width: 250px;
+    width: 100%;
 
     /* debug */
     height: 50px;
@@ -34,13 +34,13 @@ aside div {
 /* //////////// */
 /* sezione main  */
 main {
-    width: calc(100% - 250px);
+    width: calc(100% - 200px);
     position: relative;
 }
 
 main .upgrade {
     height: 100px;
-    width: calc(100% - 250px);
+    width: calc(100% - 200px);
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
     top: 0;
