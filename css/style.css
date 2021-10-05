@@ -78,7 +78,11 @@ aside .playlist .playlist-wrapper a {
 }
 
 /* sezione profilo */
-aside .profile img {
+aside .profile a img {
+    height: 15px;
+}
+
+aside .profile div:last-child img {
     height: 30px;
     border-radius: 50%;
     padding: 0 2px;
