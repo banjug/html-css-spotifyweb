@@ -131,8 +131,6 @@ main .upgrade {
     position: absolute;
     top: 0;
     left: 0;
-    line-height: 100px;
-    vertical-align: middle;
 }
 
 main .upgrade a {
@@ -141,6 +139,11 @@ main .upgrade a {
     border: 2px solid #ffffff;
     border-radius: 20px;
     padding: 10px 40px;
+    margin-right: 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
 }
 
 
