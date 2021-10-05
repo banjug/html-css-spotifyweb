@@ -76,20 +76,25 @@
     }
 
     /* sezione profilo */
-    aside .profile a:nth-child(2) {
-        display: none;
+
+    aside .profile {
+        margin: 0;
     }
 
-    aside .profile div:last-child{
+    aside .profile div:first-child, aside .profile div:last-child {
         display: block;
+    }
+
+    aside .profile div a:last-child {
+        display: none;
     }
 
     aside .divider {
         display: none;
     }
 
-    aside .profile div a {
-        display: none;
+    aside .profile a img {
+        margin: 5px 0;
     }
 
     /* sezione centrale */
