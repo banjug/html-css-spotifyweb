@@ -42,6 +42,8 @@ aside a {
 
 aside li {
     list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
 aside .logo {
@@ -52,8 +54,40 @@ aside .aside-nav img {
     height: 30px;
 }
 
+aside .aside-nav ul li:first-child a {
+    color: #ffffff;
+}
+
+/* sezione playlist  */
+aside .playlist h3 {
+    color: #ffffff;
+}
+
+aside .playlist > a {
+    display: flex;
+    align-items: center;
+}
+
+aside .playlist > a > i {
+    font-size: 40px;
+}
+
+aside .playlist .playlist-wrapper a {
+    display: block;
+    margin: 10px 0;
+}
+
+/* sezione profilo */
 aside .profile img {
     height: 30px;
+    border-radius: 50%;
+    padding: 0 2px;
+    background-color: brown;
+}
+
+aside .profile div:last-child {
+    display: flex;
+    align-items: center;
 }
 
 /* //////////// */
@@ -120,6 +154,11 @@ main .upgrade {
     color: #ffffff;
 }
 
+#player .player-tools div:last-child {
+    display: flex;
+    align-items: center;
+}
+
 #player .play-bar {
     height: 5px;
     background-color: #ffffff;
@@ -136,7 +175,7 @@ main .upgrade {
 
 /* sezione controllo volume destra */
 #player .volume-section {
-    
+
 }
 
 #player .volume-section a {
