@@ -37,6 +37,7 @@
     /* sezione logo  */
     aside .logo {
         width: 100%;
+        margin: 0;
     }
 
     aside .logo #logo-s {
@@ -53,6 +54,18 @@
     }
 
     /* sezione navigazione */
+    aside .aside-nav ul li:first-child {
+        border-left: none;
+    }
+
+    aside .aside-nav img {
+        margin: 0;
+    }
+
+    aside .aside-nav ul li {
+        padding: 0;
+    }
+
     aside .aside-nav ul li a span {
         display: none;
     }

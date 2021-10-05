@@ -27,15 +27,18 @@ a {
 /* sezione laterale navigazione */
 aside {
     width: 200px;
+    height: calc(100vh - 100px);
     background-color: #000000;
+    font-size: .75rem;
+    font-weight: 700;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-aside > div {
-    width: 100%;
-    padding: 15px;
+aside .upper-sidebar {
+    height: 100%;
 }
 
 aside a {
@@ -58,7 +61,7 @@ aside img {
 
 aside .logo {
     width: 75%;
-    margin-bottom: 20px;
+    margin: 15px 15px 20px;
 }
 
 aside .logo img {
@@ -74,13 +77,32 @@ aside .aside-nav {
     margin-bottom: 20px;
 }
 
+aside .aside-nav ul li {
+    margin: 10px 0;
+    padding-left: 15px;
+}
+
+aside .aside-nav img {
+    margin-right: 10px;
+}
+
+aside .aside-nav ul li:first-child {
+    border-left: 3px solid #adff2f;
+}
+
 aside .aside-nav ul li:first-child a {
     color: #ffffff;
 }
 
 /* sezione playlist  */
+aside .playlist {
+    margin-left: 15px;
+    height: 100%;
+}
+
 aside .playlist h3 {
     color: #ffffff;
+    margin: 10px 0;
 }
 
 aside .playlist > a {
@@ -90,11 +112,16 @@ aside .playlist > a {
 
 aside .playlist > a > i {
     font-size: 40px;
+    margin-right: 10px;
+}
+
+aside .playlist .playlist-wrapper {
+    overflow: auto;
 }
 
 aside .playlist .playlist-wrapper a {
     display: block;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 /* sezione profilo */
