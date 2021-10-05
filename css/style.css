@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -14,6 +20,10 @@ a {
     background-color: cornflowerblue;
 }
 
+.divider {
+    border-bottom: 2px solid #a3a3a3;
+}
+
 /* //////////////////////////// */
 /* sezione laterale navigazione */
 aside {
@@ -24,19 +34,26 @@ aside {
 aside > div {
     width: 100%;
     padding: 15px;
+}
 
-    /* debug */
-    /* height: 50px; */
-    border: 1px solid springgreen;
-    background-color: royalblue;
+aside a {
+    color: #a3a3a3;
+}
+
+aside li {
+    list-style-type: none;
 }
 
 aside .logo {
     width: 75%;
-}   
+}
 
-aside .profile a img {
-    width: 15%;
+aside .aside-nav img {
+    height: 30px;
+}
+
+aside .profile img {
+    height: 30px;
 }
 
 /* //////////// */
@@ -58,15 +75,76 @@ main .upgrade {
 
 /* ////////////// */
 /* sezione player */
+
 #player {
     height: 100px;
     background-color: coral;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #player div {
-    height: 100%;
-    width: 200px;
-    background-color: steelblue;
+    padding: 5px;
+}
+
+
+/* sezione now playing sinistra */
+#player .now-playing {
+    display: flex;
+    align-items: center;
+}
+
+#player .song-playing {
+    display: flex;
+    margin-right: 20px;
+}
+
+#player .song-playing img {
+    width: 40px;
+}
+
+#player .now-playing a {
+    color: #ffffff;
+}
+
+
+/* sezione player tools centrale  */
+#player .player-tools {
+    text-align: center;
+    color: #ffffff;
+}
+
+#player .player-tools i {
+    margin: 0 20px;
+    color: #ffffff;
+}
+
+#player .play-bar {
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0;
+    margin: 0 20px;
+}
+
+#player .player-tools .play-bar {
+    width: 500px;
+}
+
+
+/* sezione controllo volume destra */
+#player .volume-section {
+    
+}
+
+#player .volume-section a {
+    margin: 0 5px;
+    color: #ffffff;
+}
+
+#player .volume-section .play-bar {
+    width: 100px;
+    margin: 0;
 }
