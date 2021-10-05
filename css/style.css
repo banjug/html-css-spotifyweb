@@ -158,11 +158,6 @@ main .upgrade a {
     align-items: center;
 }
 
-#player div {
-    padding: 5px;
-}
-
-
 /* sezione now playing sinistra */
 #player .now-playing {
     display: flex;
@@ -172,16 +167,21 @@ main .upgrade a {
 #player .song-playing {
     display: flex;
     margin-right: 20px;
+    font-size: .75rem;
 }
 
 #player .song-playing img {
     width: 40px;
+    margin: 0 10px;
 }
 
 #player .now-playing a {
-    color: #ffffff;
+    color: #a3a3a3;
 }
 
+#player .now-playing h4 {
+    color: #ffffff;
+}
 
 /* sezione player tools centrale  */
 #player .player-tools {
@@ -206,25 +206,38 @@ main .upgrade a {
 #player .player-tools div:last-child {
     display: flex;
     align-items: center;
+    font-size: .75rem;
+    font-weight: 700;
 }
 
 #player .play-bar {
     height: 5px;
-    background-color: #ffffff;
+    background-color: #a3a3a3;
     border-radius: 5px;
     display: inline-block;
-    padding: 0;
     margin: 0 20px;
+    position: relative;
+}
+
+#player .short-bar {
+    width: 30%;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #player .player-tools .play-bar {
     width: 30vw;
 }
 
-
 /* sezione controllo volume destra */
 #player .volume-section {
-
+    font-size: .75rem;
+    margin-right: 5px;
 }
 
 #player .volume-section a {
