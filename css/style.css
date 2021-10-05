@@ -21,15 +21,23 @@ aside {
     background-color: darkcyan;
 }   
 
-aside div {
+aside > div {
     width: 100%;
+    padding: 15px;
 
     /* debug */
-    height: 50px;
+    /* height: 50px; */
     border: 1px solid springgreen;
     background-color: royalblue;
 }
 
+aside .logo {
+    width: 75%;
+}   
+
+aside .profile a img {
+    width: 15%;
+}
 
 /* //////////// */
 /* sezione main  */
