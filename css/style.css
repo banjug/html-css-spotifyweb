@@ -42,16 +42,28 @@ aside a {
 
 aside li {
     list-style-type: none;
+}
+
+aside li a {
+    
     display: flex;
     align-items: center;
+}
+
+aside img {
+    height: 30px;
 }
 
 aside .logo {
     width: 75%;
 }
 
-aside .aside-nav img {
-    height: 30px;
+aside .logo img {
+    height: auto;
+}
+
+aside .logo #logo-s {
+    display: none;
 }
 
 aside .aside-nav ul li:first-child a {

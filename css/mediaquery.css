@@ -19,7 +19,71 @@
 /* ////////////// */
 /* media query xs */
 @media all and (max-width: 552px) {
+
+    /* sezione laterale */
     aside {
-        width: 75px;
+        width: 50px;
+        text-align: center;
+    }
+
+    aside > div {
+        padding: 0;
+    }
+
+    aside li a {
+        display: block;
+    }
+
+    /* sezione logo  */
+    aside .logo {
+        width: 100%;
+    }
+
+    aside .logo #logo-s {
+        display: block;
+        margin: 10px 0 20px;
+    }
+
+    aside .logo #logo-s img {
+        width: 30px;
+    }
+
+    aside .logo #logo-l {
+        display: none;
+    }
+
+    /* sezione navigazione */
+    aside .aside-nav ul li a span {
+        display: none;
+    }
+
+    /* sezione playlist  */
+    .playlist {
+        display: none;
+    }
+
+    /* sezione profilo */
+    aside .profile a:nth-child(2) {
+        display: none;
+    }
+
+    aside .profile div:last-child{
+        display: block;
+    }
+
+    aside .divider {
+        display: none;
+    }
+
+    aside .profile div a {
+        display: none;
+    }
+
+    /* sezione centrale */
+
+    /* sezione cta  */
+    main .upgrade {
+        width: calc(100% - 50px);
     }
 }
+
