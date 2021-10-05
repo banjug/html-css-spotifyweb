@@ -82,7 +82,7 @@
     /* sezione centrale */
 
     /* sezione cta  */
-    main .upgrade {
+    main {
         width: calc(100% - 50px);
     }
 }
