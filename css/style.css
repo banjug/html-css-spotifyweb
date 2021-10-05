@@ -3,3 +3,62 @@
     margin: 0;
     padding: 0;
 }
+
+a {
+    text-decoration: none;
+}
+
+#wrapper {
+    display: flex;
+    height: calc(100vh - 100px);
+    background-color: cornflowerblue;
+}
+
+/* //////////////////////////// */
+/* sezione laterale navigazione */
+aside {
+    width: 250px;
+    background-color: darkcyan;
+}   
+
+aside div {
+    width: 250px;
+
+    /* debug */
+    height: 50px;
+    border: 1px solid springgreen;
+    background-color: royalblue;
+}
+
+
+/* //////////// */
+/* sezione main  */
+main {
+    width: calc(100% - 250px);
+    position: relative;
+}
+
+main .upgrade {
+    height: 100px;
+    width: calc(100% - 250px);
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+
+/* ////////////// */
+/* sezione player */
+#player {
+    height: 100px;
+    background-color: coral;
+    display: flex;
+    justify-content: space-between;
+}
+
+#player div {
+    height: 100%;
+    width: 200px;
+    background-color: steelblue;
+}
