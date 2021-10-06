@@ -23,9 +23,8 @@ a {
 /* sezione laterale navigazione */
 aside {
     width: 200px;
-    height: calc(100vh - 100px);
     background-color: #000000;
-    font-size: .75rem;
+    font-size: .70rem;
     font-weight: 700;
 
     display: flex;
@@ -33,9 +32,6 @@ aside {
     justify-content: space-between;
 }
 
-aside .upper-sidebar {
-    height: 100%;
-}
 
 aside a {
     color: #a3a3a3;
@@ -93,7 +89,6 @@ aside .aside-nav ul li:first-child a {
 /* sezione playlist  */
 aside .playlist {
     margin-left: 15px;
-    height: 100%;
 }
 
 aside .playlist h3 {
@@ -156,8 +151,26 @@ aside .divider {
 /* sezione main  */
 main {
     width: calc(100% - 200px);
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
     position: relative;
     background-color: #141922;
+    padding-top: 120px;
+}
+
+main h2 {
+    color: #ffffff;
+    margin: 25px 0 0 25px;
+    font-size: 1.5rem;
+}
+
+main > span {
+    color: #a3a3a3;
+    margin: 25px 0 0 25px;
+
+    font-weight: 700;
+    font-size: .7rem;
 }
 
 /* sezione cta */
@@ -184,6 +197,51 @@ main .upgrade a {
     transform: translate(0, -50%);
 }
 
+/* titoli sezioni */
+main .section-titles {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    color: #a3a3a3;
+    font-size: .70rem;
+}
+
+main .section-titles h3 {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* sezione musica */
+main section {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+}
+
+main section .album {
+    padding: 15px;
+    width: calc((100% - 20px) / 6 );
+    text-align: center;
+    font-size: .7rem;
+}
+
+main section .album img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+main section .album h3 {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+main section .album span {
+    color: #a3a3a3;
+}
+
+main section:last-child div img {
+    border-radius: 50%;
+}
 
 /* ////////////// */
 /* sezione player */
