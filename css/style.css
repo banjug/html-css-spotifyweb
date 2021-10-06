@@ -332,6 +332,44 @@ main section .album a:hover .img-overlay {
     align-items: center;
 }
 
+/* barra di riproduzione  */
+#player .play-bar {
+    height: 5px;
+    background-color: #a3a3a3;
+    border-radius: 5px;
+    margin: 0 20px;
+    position: relative;
+}
+
+#player .short-bar {
+    width: 30%;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#player .bar-dot {
+    width: 15px;
+    aspect-ratio: 1;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: none;
+}
+
+#player .play-bar:hover .short-bar{
+    background-color: #adff2f;
+}
+
+#player .play-bar:hover .bar-dot {
+    display: inline;
+}
+
 /* sezione now playing sinistra */
 #player .now-playing {
     display: flex;
@@ -388,7 +426,7 @@ main section .album a:hover .img-overlay {
     font-size: 1.75rem;
 }
 
-#player .player-tools div:last-child {
+#player .player-tools > div:last-child {
     display: flex;
     align-items: center;
     font-size: .75rem;
@@ -398,25 +436,6 @@ main section .album a:hover .img-overlay {
 #player .player-tools div a {
     display: inline;
     vertical-align: middle;
-}
-
-#player .play-bar {
-    height: 5px;
-    background-color: #a3a3a3;
-    border-radius: 5px;
-    margin: 0 20px;
-    position: relative;
-}
-
-#player .short-bar {
-    width: 30%;
-    height: 5px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 #player .player-tools .play-bar {
