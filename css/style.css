@@ -426,6 +426,10 @@ main section .album a:hover .img-overlay {
     font-size: 1.75rem;
 }
 
+#player .player-tools div:first-child a:nth-child(3):hover i {
+    transform: scale(1.1);
+}
+
 #player .player-tools > div:last-child {
     display: flex;
     align-items: center;
