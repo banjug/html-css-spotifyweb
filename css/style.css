@@ -161,7 +161,7 @@ main {
 
 main h2 {
     color: #ffffff;
-    margin: 25px 0 0 25px;
+    margin-left: 25px;
     font-size: 1.5rem;
 }
 
@@ -176,7 +176,7 @@ main > span {
 /* sezione cta */
 
 main .upgrade {
-    height: 100px;
+    height: 80px;
     width: calc(100% - 200px);
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
@@ -186,6 +186,7 @@ main .upgrade {
 
 main .upgrade a {
     font-weight: 700;
+    font-size: .8rem;
     color: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 20px;
@@ -208,7 +209,13 @@ main .section-titles {
 
 main .section-titles h3 {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 15px 30px;
+}
+
+main .section-titles .active {
+    width: 40%;
+    margin: 3px auto;
+    border-bottom: 3px solid #adff2f;
 }
 
 /* sezione musica */
@@ -280,6 +287,10 @@ main section:last-child div img {
     color: #ffffff;
 }
 
+#player .now-playing > div:last-child a {
+    margin-right: 10px;
+}
+
 /* sezione player tools centrale  */
 #player .player-tools {
     text-align: center;
@@ -291,12 +302,11 @@ main section:last-child div img {
     color: #ffffff;
 }
 
-#player .player-tools div a {
-    display: inline-block;
-    vertical-align: middle;
+#player .player-tools > div:first-child {
+    margin-bottom: 10px;
 }
 
-#player .player-tools div a:nth-child(3) {
+#player .player-tools div:first-child a:nth-child(3) {
     font-size: 1.75rem;
 }
 
@@ -307,11 +317,15 @@ main section:last-child div img {
     font-weight: 700;
 }
 
+#player .player-tools div a {
+    display: inline;
+    vertical-align: middle;
+}
+
 #player .play-bar {
     height: 5px;
     background-color: #a3a3a3;
     border-radius: 5px;
-    display: inline-block;
     margin: 0 20px;
     position: relative;
 }
@@ -335,6 +349,9 @@ main section:last-child div img {
 #player .volume-section {
     font-size: .75rem;
     margin-right: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 #player .volume-section a {

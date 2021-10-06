@@ -112,6 +112,10 @@
         width: calc(100% - 50px);
     }
 
+    main .upgrade {
+        width: calc(100% - 50px);
+    }
+
     /* sezione musica  */
 
     main section .album {
