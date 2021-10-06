@@ -237,13 +237,18 @@ main .section-titles {
     text-align: center;
     width: 70%;
     margin: 0 auto;
-    color: #a3a3a3;
-    font-size: .70rem;
+    font-size: .85rem;
+    font-weight: 700;
 }
 
-main .section-titles h3 {
+main .section-titles a {
+    color: #a3a3a3;
     display: inline-block;
     margin: 0 15px 30px;
+}
+
+main .section-titles a:hover {
+    color: #ffffff;
 }
 
 main .section-titles .active {
