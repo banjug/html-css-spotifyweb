@@ -330,6 +330,8 @@ main section .album a:hover .img-overlay {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 /* barra di riproduzione  */
