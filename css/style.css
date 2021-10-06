@@ -212,6 +212,7 @@ main .upgrade {
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 1;
 }
 
 main .upgrade a {
@@ -288,6 +289,36 @@ main section .album span {
 
 main section:last-child div img {
     border-radius: 50%;
+}
+
+main section .album .img-container {
+    position: relative;
+}
+
+main section .album .img-container .img-overlay {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main #popular .album .img-container .img-overlay {
+    border-radius: 50%;
+}
+
+main section .album .img-container .img-overlay i {
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+main section .album a:hover .img-overlay {
+    display: flex;
 }
 
 /* ////////////// */
