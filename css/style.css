@@ -23,6 +23,10 @@ a {
 /* sezione laterale navigazione */
 aside {
     width: 200px;
+    height: 100%;
+    min-height: 50%;
+    overflow-y: hidden;
+
     background-color: #000000;
     font-size: .70rem;
     font-weight: 700;
@@ -30,6 +34,11 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+aside > div:first-child {
+    /* upper aside */
+    height: 100%;
 }
 
 
@@ -51,6 +60,7 @@ aside img {
     height: 30px;
 }
 
+/* logo  */
 aside .logo {
     width: 75%;
     margin: 15px 15px 20px;
@@ -89,6 +99,7 @@ aside .aside-nav ul li:first-child a {
 /* sezione playlist  */
 aside .playlist {
     margin-left: 15px;
+    height: auto;
 }
 
 aside .playlist h3 {
@@ -107,7 +118,10 @@ aside .playlist > a > i {
 }
 
 aside .playlist .playlist-wrapper {
-    overflow: auto;
+    /* parte di playlist che deve scrollare  */
+    height: auto;
+    min-height: 50%;
+    overflow-y: scroll;
 }
 
 aside .playlist .playlist-wrapper a {
