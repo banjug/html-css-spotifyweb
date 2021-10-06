@@ -7,13 +7,21 @@
 /* ////////////// */
 /* media query md */
 @media all and (max-width: 878px) and (min-width: 640px){
-    
+    /* sezione musica  */
+
+    main section .album {
+        width: calc((100% - 20px) / 4);
+    }
 }
 
 /* ///////////// */
 /* media query s */
 @media all and (max-width:639px ) and (min-width: 553px){
-    
+    /* sezione musica  */
+
+    main section .album {
+        width: calc((100% - 20px) / 2);
+    }
 }
 
 /* ////////////// */
@@ -102,6 +110,12 @@
     /* sezione cta  */
     main {
         width: calc(100% - 50px);
+    }
+
+    /* sezione musica  */
+
+    main section .album {
+        width: calc((100% - 20px) / 2);
     }
 }
 

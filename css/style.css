@@ -177,9 +177,9 @@ main > span {
 
 main .upgrade {
     height: 100px;
-    width: 100%;
+    width: calc(100% - 200px);
     background-color: rgba(0, 0, 0, .5);
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
 }
@@ -216,6 +216,7 @@ main section {
     margin: 10px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 main section .album {
