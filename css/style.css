@@ -96,6 +96,10 @@ aside .aside-nav ul li:first-child a {
     color: #ffffff;
 }
 
+aside .aside-nav ul li a:hover {
+    color: #ffffff;
+}
+
 /* sezione playlist  */
 aside .playlist {
     margin-left: 15px;
@@ -110,6 +114,10 @@ aside .playlist h3 {
 aside .playlist > a {
     display: flex;
     align-items: center;
+}
+
+aside .playlist > a:hover {
+    color: #ffffff;
 }
 
 aside .playlist > a > i {
@@ -129,10 +137,18 @@ aside .playlist .playlist-wrapper a {
     margin: 20px 0;
 }
 
+aside .playlist .playlist-wrapper a:hover {
+    color: #ffffff;
+}
+
 /* sezione profilo */
 aside .profile {
     margin-left: 15px;
     padding-bottom: 10px;
+}
+
+aside .profile a:hover {
+    color: #ffffff;
 }
 
 aside .profile a img {
@@ -210,6 +226,10 @@ main .upgrade a {
     top: 50%;
     right: 0;
     transform: translate(0, -50%);
+}
+
+main .upgrade a:hover {
+    transform: scale(1.1) translate(0, -50%);
 }
 
 /* titoli sezioni */
