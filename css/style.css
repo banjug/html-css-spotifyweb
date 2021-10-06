@@ -361,6 +361,14 @@ main section .album a:hover .img-overlay {
     margin-right: 10px;
 }
 
+#player .now-playing div:first-child a:hover span {
+    text-decoration: underline;
+}
+
+#player .now-playing div:last-child a:hover {
+    color: #ffffff;
+}
+
 /* sezione player tools centrale  */
 #player .player-tools {
     text-align: center;
