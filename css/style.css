@@ -298,7 +298,7 @@ main section .album .img-container {
 main section .album .img-container .img-overlay {
     width: 100%;
     aspect-ratio: 1;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .4);
     position: absolute;
     top: 0;
     left: 0;
