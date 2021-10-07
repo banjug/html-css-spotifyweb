@@ -47,7 +47,6 @@ aside li {
 }
 
 aside li a {
-    
     display: flex;
     align-items: center;
 }
@@ -56,6 +55,7 @@ aside img {
     height: 25px;
 }
 
+/* ----------------------------- */
 /* logo  */
 aside .logo {
     width: 75%;
@@ -70,6 +70,7 @@ aside .logo #logo-s {
     display: none;
 }
 
+/* ----------------------------- */
 /* navbar */
 
 aside .aside-nav {
@@ -86,8 +87,9 @@ aside .aside-nav img {
     margin-right: 10px;
 }
 
+/* colore icone cerca libreria da bianco a grigio */
 aside .aside-nav ul li:nth-child(2) img, aside .aside-nav ul li:nth-child(3) img {
-    filter: invert(100%) sepia(0%) saturate(3399%) hue-rotate(186deg) brightness(110%) contrast(53%);
+    filter: opacity(.5)
 }
 
 aside .aside-nav ul li:first-child {
@@ -98,6 +100,7 @@ aside .aside-nav ul li:first-child a {
     color: #ffffff;
 }
 
+/* hover navbar */
 aside .aside-nav ul li:hover a {
     color: #ffffff;
 }
@@ -106,6 +109,7 @@ aside .aside-nav ul li:hover img {
     filter: none;
 }
 
+/* ----------------------------- */
 /* sezione playlist  */
 aside .playlist {
     width: 100%;
@@ -131,6 +135,10 @@ aside .playlist > a > i {
     margin-right: 10px;
 }
 
+/* ----------------------------- */
+/* flex container zona inferiore, permette al profilo di stare attaccato al fondo e alla lista di playlist di scrollare 
+min height 0 permette al container di stringersi
+overflow hidden così non scrolla */
 aside .bottom-aside {
     max-height: 100%;
     min-height: 0;
@@ -143,6 +151,7 @@ aside .bottom-aside {
     justify-content: space-between;
 }
 
+/* così il wrapper si riduce grazie al min height e scrolla  */
 aside .bottom-aside .playlist-wrapper {
     width: 100%;
     min-height: 30%;
@@ -158,6 +167,7 @@ aside .bottom-aside .playlist-wrapper a:hover {
     color: #ffffff;
 }
 
+/* ----------------------------- */
 /* sezione profilo */
 aside .profile {
     padding-bottom: 10px;
@@ -187,7 +197,7 @@ aside .profile div:last-child {
     align-items: center;
 }
 
-aside .divider {
+aside #divider {
     border-bottom: 1px solid #a3a3a3;
     margin: 10px 0;
     width: 90%;
@@ -219,6 +229,7 @@ main > span {
     font-size: .7rem;
 }
 
+/* ----------------------------- */
 /* sezione cta */
 
 main .upgrade {
@@ -249,6 +260,7 @@ main .upgrade a:hover {
     transform: scale(1.1) translate(0, -50%);
 }
 
+/* ----------------------------- */
 /* titoli sezioni */
 main .section-titles {
     text-align: center;
@@ -272,6 +284,7 @@ main .section-titles .active {
     border-bottom: 3px solid #adff2f;
 }
 
+/* ----------------------------- */
 /* sezione musica */
 main section {
     margin: 10px;
@@ -348,7 +361,9 @@ main section .album a:hover .img-overlay {
     z-index: 2;
 }
 
+/* ----------------------------- */
 /* barra di riproduzione  */
+/* è usata anche nella zona di controllo volume a destra come barra del volume, funziona alla stessa maniera cambia solo la width che viene specificata sia per la barra di playback che per quella del volume */
 #player .play-bar {
     height: 4px;
     background-color: #a3a3a3;
@@ -357,6 +372,9 @@ main section .album a:hover .img-overlay {
     position: relative;
 }
 
+
+/* barra sovrapposta, è uguale con larghezza relativa in percentuale
+flex è per posizionare la pallina alla fine della barra che appare in hover */
 #player .short-bar {
     width: 30%;
     height: 4px;
@@ -370,6 +388,7 @@ main section .album a:hover .img-overlay {
     align-items: center;
 }
 
+/* appare in hover posizionata alla fine della seconda barra, la più corta  */
 #player .bar-dot {
     width: 15px;
     aspect-ratio: 1;
@@ -386,6 +405,7 @@ main section .album a:hover .img-overlay {
     display: inline;
 }
 
+/* ----------------------------- */
 /* sezione now playing sinistra */
 #player .now-playing {
     display: flex;
@@ -423,6 +443,7 @@ main section .album a:hover .img-overlay {
     color: #ffffff;
 }
 
+/* ----------------------------- */
 /* sezione player tools centrale  */
 #player .player-tools {
     text-align: center;
@@ -462,6 +483,7 @@ main section .album a:hover .img-overlay {
     width: 30vw;
 }
 
+/* ----------------------------- */
 /* sezione controllo volume destra */
 #player .volume-section {
     font-size: .75rem;
