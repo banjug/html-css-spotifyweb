@@ -1,14 +1,7 @@
 /* ////////////// */
-/* media query lg */
-@media all and (min-width: 879px){
-    
-}
-
-/* ////////////// */
 /* media query md */
 @media all and (max-width: 878px) and (min-width: 640px){
     /* sezione musica  */
-
     main section .album {
         width: calc((100% - 20px) / 4);
     }

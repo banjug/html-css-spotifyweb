@@ -57,7 +57,7 @@ aside li a {
 }
 
 aside img {
-    height: 30px;
+    height: 25px;
 }
 
 /* logo  */
@@ -82,6 +82,7 @@ aside .aside-nav {
 aside .aside-nav ul li {
     margin: 10px 0;
     padding-left: 15px;
+    border-left: 3px solid transparent;
 }
 
 aside .aside-nav img {
@@ -102,7 +103,7 @@ aside .aside-nav ul li a:hover {
 
 /* sezione playlist  */
 aside .playlist {
-    margin-left: 15px;
+    margin-left: 18px;
     height: auto;
 }
 
@@ -143,7 +144,7 @@ aside .playlist .playlist-wrapper a:hover {
 
 /* sezione profilo */
 aside .profile {
-    margin-left: 15px;
+    margin-left: 18px;
     padding-bottom: 10px;
 }
 
@@ -236,16 +237,14 @@ main .upgrade a:hover {
 /* titoli sezioni */
 main .section-titles {
     text-align: center;
-    width: 70%;
-    margin: 0 auto;
-    font-size: .85rem;
+    font-size: .75rem;
     font-weight: 700;
 }
 
 main .section-titles a {
     color: #a3a3a3;
     display: inline-block;
-    margin: 0 15px 30px;
+    margin: 0 10px 20px;
 }
 
 main .section-titles a:hover {
@@ -336,7 +335,7 @@ main section .album a:hover .img-overlay {
 
 /* barra di riproduzione  */
 #player .play-bar {
-    height: 5px;
+    height: 4px;
     background-color: #a3a3a3;
     border-radius: 5px;
     margin: 0 20px;
@@ -345,7 +344,7 @@ main section .album a:hover .img-overlay {
 
 #player .short-bar {
     width: 30%;
-    height: 5px;
+    height: 4px;
     background-color: #ffffff;
     border-radius: 5px;
     position: absolute;
@@ -424,8 +423,8 @@ main section .album a:hover .img-overlay {
     margin-bottom: 10px;
 }
 
-#player .player-tools div:first-child a:nth-child(3) {
-    font-size: 1.75rem;
+#player .player-tools > div:first-child a:nth-child(3) {
+    font-size: 1.5rem;
 }
 
 #player .player-tools div:first-child a:nth-child(3):hover i {
@@ -463,6 +462,6 @@ main section .album a:hover .img-overlay {
 }
 
 #player .volume-section .play-bar {
-    width: 100px;
+    width: 80px;
     margin: 0;
 }
