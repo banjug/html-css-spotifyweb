@@ -414,7 +414,7 @@ flex è per posizionare la pallina alla fine della barra che appare in hover */
 
 #player .song-playing {
     display: flex;
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: .75rem;
 }
 
@@ -448,6 +448,7 @@ flex è per posizionare la pallina alla fine della barra che appare in hover */
 #player .player-tools {
     text-align: center;
     color: #ffffff;
+    margin: 0 10px;
 }
 
 #player .player-tools i {
@@ -480,7 +481,7 @@ flex è per posizionare la pallina alla fine della barra che appare in hover */
 }
 
 #player .player-tools .play-bar {
-    width: 30vw;
+    width: 25vw;
 }
 
 /* ----------------------------- */
