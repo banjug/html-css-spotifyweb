@@ -72,6 +72,10 @@ aside .logo #logo-s {
 
 /* navbar */
 
+aside .aside-nav {
+    width: 100%;
+}
+
 aside .aside-nav ul li {
     margin: 10px 0;
     padding-left: 15px;
@@ -96,7 +100,8 @@ aside .aside-nav ul li a:hover {
 
 /* sezione playlist  */
 aside .playlist {
-    margin-left: 18px;
+    width: 100%;
+    padding-left: 18px;
 }
 
 aside .playlist h3 {
@@ -121,6 +126,9 @@ aside .playlist > a > i {
 aside .bottom-aside {
     max-height: 100%;
     min-height: 0;
+    width: 100%;
+    padding-left: 18px;
+
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
@@ -128,7 +136,6 @@ aside .bottom-aside {
 }
 
 aside .bottom-aside .playlist-wrapper {
-    margin-left: 18px;
     width: 100%;
     min-height: 30%;
     overflow-y: auto;
@@ -145,7 +152,6 @@ aside .bottom-aside .playlist-wrapper a:hover {
 
 /* sezione profilo */
 aside .profile {
-    margin-left: 18px;
     padding-bottom: 10px;
 }
 

@@ -72,11 +72,16 @@
     }
 
     /* sezione playlist  */
-    .playlist {
+    .playlist, .playlist-wrapper {
         display: none;
     }
 
     /* sezione profilo */
+
+    aside .bottom-aside {
+        justify-content: flex-end;
+        padding-left: 0;
+    }
 
     aside .profile {
         margin: 0;
